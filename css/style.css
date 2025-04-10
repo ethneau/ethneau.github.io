@@ -1917,7 +1917,7 @@ textarea.w-select {
 .w-nav {
   z-index: 1000;
   background: #ddd;
-  position: relative;
+  position: absolute;
 }
 
 .w-nav:before,
@@ -1957,6 +1957,7 @@ textarea.w-select {
 .w-nav-menu {
   float: right;
   position: relative;
+  z-index: 1000;
 }
 
 [data-nav-menu-open] {
@@ -1980,7 +1981,7 @@ textarea.w-select {
   width: 100%;
   display: none;
   position: absolute;
-  top: 100%;
+  top: 75%;
   left: 0;
   right: 0;
   overflow: hidden;
@@ -1996,7 +1997,7 @@ textarea.w-select {
 
 .w-nav[data-animation="over-left"] .w-nav-overlay,
 .w-nav[data-animation="over-left"] [data-nav-menu-open] {
-  z-index: 1;
+  z-index: 100;
   top: 0;
   right: auto;
 }
@@ -2007,7 +2008,7 @@ textarea.w-select {
 
 .w-nav[data-animation="over-right"] .w-nav-overlay,
 .w-nav[data-animation="over-right"] [data-nav-menu-open] {
-  z-index: 1;
+  z-index: 100;
   top: 0;
   left: auto;
 }
@@ -2030,7 +2031,7 @@ textarea.w-select {
 }
 
 .w-nav-button.w--open {
-  color: #fff;
+  color: #ffffff;
   background-color: #c8c8c8;
 }
 
@@ -2787,7 +2788,7 @@ a {
 }
 
 .hero-heading-left {
-  z-index: 10;
+  z-index: -1;
   background-color: #f4f5f6;
   border-bottom: 1px solid #e4ebf3;
   padding: 80px 30px;
